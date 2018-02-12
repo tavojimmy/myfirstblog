@@ -1,0 +1,19 @@
+<html>
+        <head>
+            <title>Django Blog GeoJimmy</title>
+        </head>
+        <body>
+            <div>
+                <h1><a href="">El Blog de GeoJimmy</a></h1>
+            </div>
+
+            {% for post in posts %}
+            <div>
+                <p> Fecha de publiación:{{post.published_date}}</p>
+                <h><a href=" ">{{post.title}}</a></h>
+                <p>{{post.text|linebreaksbr}}</p>
+            </div>
+            {% endfor %}
+
+        </body>
+    </html>
